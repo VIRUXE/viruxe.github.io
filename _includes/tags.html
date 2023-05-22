@@ -1,3 +1,7 @@
-{% for tag in site.tags %}
-    <a href="#"><kbd>{{ tag[0] }}</kbd></a>
-{% endfor %}
+<ul>
+	{% for tag in site.tags %}
+	<li>
+		<a href="/{{ tag[0] | slugify }}"><mark>{{ tag[0] }}<sup>({{ tag[1] | size }})</sup></mark></a> 
+	</li>
+	{% endfor %}
+</ul>
