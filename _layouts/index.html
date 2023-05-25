@@ -14,10 +14,14 @@
 				align-items: center;
 			}
 
-			header .grid div:last-child p {
-				font-size: .9rem;
-				text-overflow: ellipsis;
-			}
+		#profile-picture {
+			height: 200px;
+			border-radius: 50%;
+		}
+
+		#github {
+			height: 40px;
+		}	
 
 			.excerpt {
 				position: relative;
@@ -64,13 +68,20 @@
 			<header>
 				<div class="grid">
 					<div>
-						<img
-							id="profile-picture"
-							src="https://avatars.githubusercontent.com/u/1616657?v=4" />
+							<img id="profile-picture"
+								title="Profile Picture"
+								src="https://avatars.githubusercontent.com/u/1616657?v=4" />
+							
 						<hgroup>
 							<h1>{{ site.title }}</h1>
 							<h2>Software Developer/Solutions Arquitect</h2>
 						</hgroup>
+						<a href="https://github.com/VIRUXE" target="_blank"
+								><img
+									id="github"
+									title="My GitHub Repositories"
+									src="assets/img/github-mark-white.png"
+							/></a>
 					</div>
 					<div>
 						<p>
@@ -80,15 +91,17 @@
 							challenging problems. <br />My expertise lies in understanding the
 							intricate details of a problem, breaking it down into manageable
 							components, and then designing a solution that not only meets the
-							present needs but is also future-proof.<br>
-							I focus mainly in Back-End Web technologies but if something has documentation for it odds are I will be able to code on it.
+							present needs but is also future-proof.<br />
+							I focus mainly in Back-End Web technologies but if something has
+							documentation for it odds are I will be able to code on it.
 						</p>
 						<p>
 							Now, what better way to prove my knowledge than to read me
-							breaking down problems into solutions and actually coding them? <small>(Tired of those meaningless CV's that don't actually tell you if a person can do what they say they can?)</small>
-							<br />The technologies below are the ones I work with. You
-							can either click on any to get a list of articles on that specific
-							technology or read the latest ones.
+							breaking down problems into solutions and actually coding them?
+							<small
+								>(Tired of those meaningless CV's that don't actually tell you
+								if a person can do what they say they can?)</small
+							>
 						</p>
 					</div>
 				</div>
