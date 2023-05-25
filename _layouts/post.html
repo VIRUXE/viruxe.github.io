@@ -10,20 +10,24 @@
 		<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 	</head>
 	<body>
-		<header class="container">
-			<div class="grid">
-				<div>
-					<hgroup>
-						<h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
-						<h2>Back-end Software Developer/Solutions Arquitect</h2>
-					</hgroup>
+		<div class="container">
+			<header>
+				<div class="grid">
+					<div>
+						<hgroup>
+							<h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+							<h2>Back-end Software Developer/Solutions Arquitect</h2>
+						</hgroup>
+					</div>
+					<div>
+						<h3>{{ page.title }}</h3>
+						{% if page.project %}<small><a href="yesthisdoesntworkyetkthx">{{ page.project }}</a></small>{% endif %}
+						<nav>{% include tags.html %}</nav>
+					</div>
 				</div>
-				<div>
-					{% include tags.html %}
-				</div>
-			</div>
-		</header>
-		<main class="container">{{ content }}</main>
-		<footer class="container">{{ site.title }}</footer>
+			</header>
+			<main>{{ content }}</main>
+			{% include footer.html %}
+		</div>
 	</body>
 </html>
