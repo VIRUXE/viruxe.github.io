@@ -13,15 +13,19 @@
 				text-align: center;
 				align-items: center;
 			}
+			
+			header .grid div:first-child {
+				padding-bottom: 1rem;
+			}
 
-		#profile-picture {
-			height: 200px;
-			border-radius: 50%;
-		}
+			#profile-picture {
+				height: 200px;
+				border-radius: 50%;
+			}
 
-		#github {
-			height: 40px;
-		}	
+			#github {
+				height: 40px;
+			}
 
 			.excerpt {
 				position: relative;
@@ -68,20 +72,21 @@
 			<header>
 				<div class="grid">
 					<div>
-							<img id="profile-picture"
-								title="Profile Picture"
-								src="https://avatars.githubusercontent.com/u/1616657?v=4" />
-							
+						<img
+							id="profile-picture"
+							title="Profile Picture"
+							src="https://avatars.githubusercontent.com/u/1616657?v=4" />
+
 						<hgroup>
 							<h1>{{ site.title }}</h1>
 							<h2>Software Developer/Solutions Arquitect</h2>
 						</hgroup>
 						<a href="https://github.com/VIRUXE" target="_blank"
-								><img
-									id="github"
-									title="My GitHub Repositories"
-									src="assets/img/github-mark-white.png"
-							/></a>
+							><img
+								id="github"
+								title="My GitHub Repositories"
+								src="assets/img/github-mark-white.png"
+						/></a>
 					</div>
 					<div>
 						<p>
